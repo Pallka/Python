@@ -11,7 +11,7 @@ h1 {
     color: var(--primary-color);
 }
 
-form {
+form, p {
     color: var(--primary-color);
     font-size: 1.2rem;
     padding: 2rem;
@@ -35,4 +35,9 @@ form input {
 
 #btn-guess:active {
         box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+mark {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
