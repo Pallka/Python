@@ -12,11 +12,16 @@
         <h1>Number guessing game</h1>
         <form action="/" method="post">
             <label for="user-number" class="col-form-label">Take a guess</label>
-            <input type="number" class="col-1 m-4">
+            <input type="number" class="col-1 m-4" name="user-number">
             <div>
                 <button type="submit" class="btn btn-primary" id="btn-guess">Guess</button>
             </div>
         </form>
+        <div class="col-auto">
+            {% if message %}
+              <p><mark>{{ message }}</mark></p>
+          {% endif %}
+        </div>
     </div>
     
 </body>
